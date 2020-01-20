@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Erail Application Testing]" parallel="tests">
+  <test thread-count="2" name="ErailHomePageVerification(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.erail.qa.Tests.HomePageTests">
+        <methods>
+          <include name="SearchTrain"/>
+          <include name="SetUpBeforeTest"/>
+          <include name="BestMacthTrain"/>
+          <include name="TearDownAfterMethod"/>
+          <include name="SetUp"/>
+          <include name="TearDownAfterTest"/>
+          <include name="SetUpBeforeMethod"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.erail.qa.Tests.HomePageTests -->
+    </classes>
+  </test> <!-- ErailHomePageVerification(failed) -->
+</suite> <!-- Failed suite [Erail Application Testing] -->
