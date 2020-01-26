@@ -67,6 +67,9 @@ public class TestAutomationBase {
 		driver.navigate().to(prop.getProperty("url"));
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
+		
+		
+		
 	}
 
 }
