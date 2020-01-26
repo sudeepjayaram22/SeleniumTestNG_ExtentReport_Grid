@@ -50,23 +50,23 @@ public class HomePageTests extends TestAutomationBase {
 		
 	}
 
-	@Test(priority = 1, threadPoolSize = 2, invocationCount = 2, timeOut = 1000)
+	@Test(priority = 1)//, threadPoolSize = 2, invocationCount = 2, timeOut = 1000)
 	public void VerifyHomePage() throws TimeoutException {
 		reporter = extentReport.createTest("VerifyHomePage");
 		homePage.VerifyHomePageLanding();
 	}
 
-	@Test(priority = 2, dataProvider = "GetTestData", threadPoolSize = 2, invocationCount = 2, timeOut = 1000)
-	public void SearchTrain(String fromStn, String toStn) throws TimeoutException {
+	@Test(priority = 2, dataProvider = "GetTestData")//, threadPoolSize = 2, invocationCount = 2, timeOut = 1000)
+	public void SearchTrain(String fromStn, String toStn) throws TimeoutException, InterruptedException {
 		reporter = extentReport.createTest("SearchTrain");
 		homePage.EnterFromToStation(fromStn, toStn);
 		homePage.SelectDepartureDate(LocalDateTime.now().plusDays(7));
 	}
 
-	@Test(priority = 3,threadPoolSize = 2, invocationCount = 2, timeOut = 1000)
+	@Test(priority = 3)//,threadPoolSize = 2, invocationCount = 2, timeOut = 1000)
 	public void BestMacthTrain() throws TimeoutException {
 		reporter = extentReport.createTest("BestMacthTrain");
-		homePage.GetBestMatchTrains();
+		homePage.GetBestMatchTrains(); 
 	}
 
 	@AfterMethod

@@ -18,6 +18,7 @@ import java.util.TreeMap;
 import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -67,12 +68,14 @@ public class HomePage extends TestAutomationBase {
 		}
 	}
 
-	public void EnterFromToStation(String fromStation, String toStation) {
+	public void EnterFromToStation(String fromStation, String toStation) throws InterruptedException {
 		fromStationTextBox.clear();
-		fromStationTextBox.sendKeys(fromStation);
+		Thread.sleep(1000);
+		fromStationTextBox.sendKeys( fromStation);
 		Assert.assertEquals(fromStationTextBox.getAttribute("value"), fromStation);
 		toStationTextBox.clear();
-		toStationTextBox.sendKeys(toStation);
+		Thread.sleep(1000);
+		toStationTextBox.sendKeys(Keys.CLEAR +toStation);
 		Assert.assertEquals(toStationTextBox.getAttribute("value"), toStation);
 	}
 

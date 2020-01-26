@@ -6,15 +6,13 @@
     <classes>
       <class name="com.erail.qa.Tests.HomePageTests">
         <methods>
-          <include name="SearchTrain"/>
+          <include name="SearchTrain" invocation-numbers="0 1"/>
           <include name="SetUpBeforeTest"/>
-          <include name="BestMacthTrain"/>
           <include name="TearDownAfterMethod"/>
           <include name="SetUp"/>
           <include name="TearDownAfterTest"/>
           <include name="SetUpBeforeMethod"/>
           <include name="TearDown"/>
-          <include name="VerifyHomePage"/>
         </methods>
       </class> <!-- com.erail.qa.Tests.HomePageTests -->
     </classes>

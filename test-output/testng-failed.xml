@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Erail Application Testing]" parallel="tests">
-  <test thread-count="2" name="ErailHomePageVerification(failed)" parallel="tests">
-    <parameter name="browserName" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="browserName" value="param-val-not-found"/>
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.erail.qa.Tests.HomePageTests">
         <methods>
-          <include name="SearchTrain"/>
+          <include name="SearchTrain" invocation-numbers="0 1"/>
           <include name="SetUpBeforeTest"/>
-          <include name="BestMacthTrain"/>
           <include name="TearDownAfterMethod"/>
           <include name="SetUp"/>
           <include name="TearDownAfterTest"/>
@@ -17,5 +16,5 @@
         </methods>
       </class> <!-- com.erail.qa.Tests.HomePageTests -->
     </classes>
-  </test> <!-- ErailHomePageVerification(failed) -->
-</suite> <!-- Failed suite [Erail Application Testing] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
