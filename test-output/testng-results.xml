@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="210828" started-at="2020-01-26T16:51:34Z" finished-at="2020-01-26T16:55:05Z">
+  <suite name="Default suite" duration-ms="296562" started-at="2020-01-26T17:53:16Z" finished-at="2020-01-26T17:58:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="210828" started-at="2020-01-26T16:51:34Z" finished-at="2020-01-26T16:55:05Z">
+    <test name="Default test" duration-ms="296562" started-at="2020-01-26T17:53:16Z" finished-at="2020-01-26T17:58:12Z">
       <class name="com.erail.qa.Tests.HomePageTests">
-        <test-method status="PASS" signature="SetUpBeforeTest(java.lang.String)[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SetUpBeforeTest" is-config="true" duration-ms="14234" started-at="2020-01-26T16:51:34Z" finished-at="2020-01-26T16:51:48Z">
+        <test-method status="PASS" signature="SetUpBeforeTest(java.lang.String)[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SetUpBeforeTest" is-config="true" duration-ms="14281" started-at="2020-01-26T17:53:16Z" finished-at="2020-01-26T17:53:30Z">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBeforeTest -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SetUp" is-config="true" duration-ms="0" started-at="2020-01-26T16:51:48Z" finished-at="2020-01-26T16:51:48Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SetUp" is-config="true" duration-ms="1" started-at="2020-01-26T17:53:30Z" finished-at="2020-01-26T17:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SetUpBeforeMethod" is-config="true" duration-ms="0" started-at="2020-01-26T16:51:48Z" finished-at="2020-01-26T16:51:48Z">
+        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SetUpBeforeMethod" is-config="true" duration-ms="1" started-at="2020-01-26T17:53:30Z" finished-at="2020-01-26T17:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBeforeMethod -->
-        <test-method status="PASS" signature="VerifyHomePage()[pri:1, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="VerifyHomePage" duration-ms="115" started-at="2020-01-26T16:51:48Z" finished-at="2020-01-26T16:51:48Z">
+        <test-method status="PASS" signature="VerifyHomePage()[pri:1, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="VerifyHomePage" duration-ms="100" started-at="2020-01-26T17:53:30Z" finished-at="2020-01-26T17:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyHomePage -->
-        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="TearDownAfterMethod" is-config="true" duration-ms="0" started-at="2020-01-26T16:51:48Z" finished-at="2020-01-26T16:51:48Z">
+        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="TearDownAfterMethod" is-config="true" duration-ms="1" started-at="2020-01-26T17:53:30Z" finished-at="2020-01-26T17:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownAfterMethod -->
-        <test-method status="FAIL" signature="SearchTrain(java.lang.String, java.lang.String)[pri:2, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SearchTrain" duration-ms="62895" started-at="2020-01-26T16:51:48Z" data-provider="GetTestData" finished-at="2020-01-26T16:52:51Z">
+        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SetUpBeforeMethod" is-config="true" duration-ms="0" started-at="2020-01-26T17:53:30Z" finished-at="2020-01-26T17:53:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpBeforeMethod -->
+        <test-method status="PASS" signature="SearchTrain(java.lang.String, java.lang.String)[pri:2, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SearchTrain" duration-ms="180597" started-at="2020-01-26T17:53:30Z" data-provider="GetTestData" finished-at="2020-01-26T17:56:31Z">
           <params>
             <param index="0">
               <value>
@@ -47,58 +51,14 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.erail.qa.Pages.HomePage.SelectDepartureDate(HomePage.java:104)
-at com.erail.qa.Tests.HomePageTests.SearchTrain(HomePageTests.java:63)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTrain -->
-        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SetUpBeforeMethod" is-config="true" duration-ms="0" started-at="2020-01-26T16:51:48Z" finished-at="2020-01-26T16:51:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpBeforeMethod -->
-        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="TearDownAfterMethod" is-config="true" duration-ms="1" started-at="2020-01-26T16:52:51Z" finished-at="2020-01-26T16:52:51Z">
+        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="TearDownAfterMethod" is-config="true" duration-ms="1" started-at="2020-01-26T17:56:31Z" finished-at="2020-01-26T17:56:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownAfterMethod -->
-        <test-method status="FAIL" signature="SearchTrain(java.lang.String, java.lang.String)[pri:2, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SearchTrain" duration-ms="62814" started-at="2020-01-26T16:52:51Z" data-provider="GetTestData" finished-at="2020-01-26T16:53:54Z">
+        <test-method status="PASS" signature="SearchTrain(java.lang.String, java.lang.String)[pri:2, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SearchTrain" duration-ms="7160" started-at="2020-01-26T17:56:31Z" data-provider="GetTestData" finished-at="2020-01-26T17:56:38Z">
           <params>
             <param index="0">
               <value>
@@ -111,74 +71,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.erail.qa.Pages.HomePage.SelectDepartureDate(HomePage.java:104)
-at com.erail.qa.Tests.HomePageTests.SearchTrain(HomePageTests.java:63)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTrain -->
-        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SetUpBeforeMethod" is-config="true" duration-ms="0" started-at="2020-01-26T16:52:51Z" finished-at="2020-01-26T16:52:51Z">
+        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SetUpBeforeMethod" is-config="true" duration-ms="0" started-at="2020-01-26T17:56:31Z" finished-at="2020-01-26T17:56:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpBeforeMethod -->
-        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="TearDownAfterMethod" is-config="true" duration-ms="0" started-at="2020-01-26T16:53:54Z" finished-at="2020-01-26T16:53:54Z">
+        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="TearDownAfterMethod" is-config="true" duration-ms="1" started-at="2020-01-26T17:56:38Z" finished-at="2020-01-26T17:56:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownAfterMethod -->
-        <test-method status="PASS" signature="BestMacthTrain()[pri:3, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="BestMacthTrain" duration-ms="68796" started-at="2020-01-26T16:53:54Z" finished-at="2020-01-26T16:55:03Z">
+        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="SetUpBeforeMethod" is-config="true" duration-ms="1" started-at="2020-01-26T17:56:38Z" finished-at="2020-01-26T17:56:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpBeforeMethod -->
+        <test-method status="PASS" signature="BestMacthTrain()[pri:3, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="BestMacthTrain" duration-ms="68610" started-at="2020-01-26T17:56:38Z" finished-at="2020-01-26T17:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BestMacthTrain -->
-        <test-method status="PASS" signature="SetUpBeforeMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="SetUpBeforeMethod" is-config="true" duration-ms="0" started-at="2020-01-26T16:53:54Z" finished-at="2020-01-26T16:53:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUpBeforeMethod -->
-        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="TearDownAfterMethod" is-config="true" duration-ms="0" started-at="2020-01-26T16:55:03Z" finished-at="2020-01-26T16:55:03Z">
+        <test-method status="PASS" signature="TearDownAfterMethod()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="TearDownAfterMethod" is-config="true" duration-ms="0" started-at="2020-01-26T17:57:46Z" finished-at="2020-01-26T17:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownAfterMethod -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="TearDown" is-config="true" duration-ms="393" started-at="2020-01-26T16:55:03Z" finished-at="2020-01-26T16:55:03Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="TearDown" is-config="true" duration-ms="689" started-at="2020-01-26T17:57:46Z" finished-at="2020-01-26T17:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="TearDownAfterTest()[pri:0, instance:com.erail.qa.Tests.HomePageTests@52f759d7]" name="TearDownAfterTest" is-config="true" duration-ms="1504" started-at="2020-01-26T16:55:03Z" finished-at="2020-01-26T16:55:05Z">
+        <test-method status="PASS" signature="TearDownAfterTest()[pri:0, instance:com.erail.qa.Tests.HomePageTests@13b6aecc]" name="TearDownAfterTest" is-config="true" duration-ms="25061" started-at="2020-01-26T17:57:47Z" finished-at="2020-01-26T17:58:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownAfterTest -->

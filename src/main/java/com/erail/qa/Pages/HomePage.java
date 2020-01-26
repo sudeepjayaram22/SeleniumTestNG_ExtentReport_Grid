@@ -82,18 +82,18 @@ public class HomePage extends TestAutomationBase {
 	public void SelectDepartureDate(LocalDateTime date) throws NullPointerException {
 		TestUtil util = new TestUtil();
 		String month = util.DateTimeFormat(date, "MMM");
-		String day = util.DateTimeFormat(date, "dd");
+		String day = util.DateTimeFormat(date, "d");
 		selectDateButton.click();
 		wait.until(ExpectedConditions.visibilityOf(calendar));
-
+  
 		List<WebElement> monthsEle = driver
-				.findElements(By.xpath("//div[@id='divCalender']//table//tr//td//table//tr[1]"));
+				.findElements(By.xpath("//div[@id='divCalender']//table//tr//td//table//tr[1 ]"));
 		for (int i = 0; i < monthsEle.size(); i++) {
 			if (monthsEle.get(i).getText().contains(month)) {
 				List<WebElement> dateEle = driver.findElements(
-						By.xpath("//div[@id='divCalender']//table//tr//td[" + i + 1 + "]//table//tr//td"));
+						By.xpath("//div[@id='divCalender']//table//tr//td[" + (i + 1) + "]//table//tr//td"));
 				for (WebElement datePick : dateEle) {
-					if (datePick.getText().equalsIgnoreCase(day)) {
+					if (datePick.getText().equalsIgnoreCase(day )) {
 						datePick.click();
 						break;
 					}
