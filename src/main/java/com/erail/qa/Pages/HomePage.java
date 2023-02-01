@@ -34,6 +34,8 @@ public class HomePage extends TestAutomationBase {
 
 	WebDriverWait wait;
 
+	private final String trainListDataTableXPath = "//table[starts-with(@class,'DataTable TrainList TrainListHeader')]";
+
 	@FindBy(xpath = "//input[@id='txtStationFrom']")
 	WebElement fromStationTextBox;
 
@@ -49,7 +51,7 @@ public class HomePage extends TestAutomationBase {
 	@FindBy(id = "divCalender")
 	WebElement calendar;
 
-	@FindBy(xpath = "//table[@class='DataTable TrainList TrainListHeader']")
+	@FindBy(xpath = trainListDataTableXPath)
 	WebElement trainListDataTable;
 
 	private HashMap Integer;
@@ -71,11 +73,11 @@ public class HomePage extends TestAutomationBase {
 	public void EnterFromToStation(String fromStation, String toStation) throws InterruptedException {
 		fromStationTextBox.clear();
 		Thread.sleep(1000);
-		fromStationTextBox.sendKeys( fromStation);
+		fromStationTextBox.sendKeys(fromStation);
 		Assert.assertEquals(fromStationTextBox.getAttribute("value"), fromStation);
 		toStationTextBox.clear();
 		Thread.sleep(1000);
-		toStationTextBox.sendKeys(Keys.CLEAR +toStation);
+		toStationTextBox.sendKeys(Keys.CLEAR + toStation);
 		Assert.assertEquals(toStationTextBox.getAttribute("value"), toStation);
 	}
 
@@ -85,15 +87,15 @@ public class HomePage extends TestAutomationBase {
 		String day = util.DateTimeFormat(date, "d");
 		selectDateButton.click();
 		wait.until(ExpectedConditions.visibilityOf(calendar));
-  
+
 		List<WebElement> monthsEle = driver
-				.findElements(By.xpath("//div[@id='divCalender']//table//tr//td//table//tr[1 ]"));
+				.findElements(By.xpath("//div[@id='divCalender']//table//tr//td//table//tr[1]"));
 		for (int i = 0; i < monthsEle.size(); i++) {
 			if (monthsEle.get(i).getText().contains(month)) {
 				List<WebElement> dateEle = driver.findElements(
 						By.xpath("//div[@id='divCalender']//table//tr//td[" + (i + 1) + "]//table//tr//td"));
 				for (WebElement datePick : dateEle) {
-					if (datePick.getText().equalsIgnoreCase(day )) {
+					if (datePick.getText().equalsIgnoreCase(day)) {
 						datePick.click();
 						break;
 					}
@@ -115,14 +117,12 @@ public class HomePage extends TestAutomationBase {
 		TreeMap<String, Integer> arrivalDateMap = new TreeMap<String, Integer>();
 
 		int columnIndex = new TestUtil().GetColumnindexByColumnName(
-				driver.findElements(
-						By.xpath("//table[@class='DataTable DataTableHeader TrainList TrainListHeader']//tr//td")),
-				"Arr.");
-		List<WebElement> trains = trainListDataTable.findElements(By.tagName("tr"));
+				driver.findElements(By.xpath(trainListDataTableXPath + "//tr//th")), "Arr.");
+		List<WebElement> trains = driver.findElements(By.xpath(trainListDataTableXPath+"//tr"));
 		for (int i = 0; i < trains.size(); i++) {
 			try {
 				arrivalDateMap
-						.put(driver.findElement(By.xpath("//table[@class='DataTable TrainList TrainListHeader']//tr["
+						.put(driver.findElement(By.xpath(trainListDataTableXPath+"//tr["
 								+ (i + 1) + "]//td[" + columnIndex + "]")).getText(), i + 1);
 			} catch (Exception e) {
 			}

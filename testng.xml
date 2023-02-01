@@ -1,11 +1,16 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
 <suite name="Erail Application Testing"> <!-- parallel="classes" thread-count="2" -->
-		<test name="ErailHomePageVerification">
+	<test name="ChromeTest">
 		<parameter name="browserName" value="chrome" />
 		<classes>
 			<class name="com.erail.qa.Tests.HomePageTests" />
 		</classes>
 	</test>
+
+	<!-- <test name="FirefoxTest">
+		<parameter name="browserName" value="firefox" />
+		<classes>
+			<class name="com.erail.qa.Tests.HomePageTests" />
+		</classes>
+	</test> -->
 </suite>
